@@ -1,0 +1,128 @@
+.swal2-container{
+    z-index: 999999999 !important;
+}
+
+
+
+.music_container {
+    margin-bottom: 142px !important;
+}
+
+.music_input {
+    border-radius: 8px;
+    border: 1px solid var(--neutral-300, #D7D7D7) !important;
+    background: var(--07, #F9F9F9) !important;
+    color: var(--01, #696969) !important;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 120%;
+    /* 19.2px */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.create_music_button {
+    display: inline-flex;
+    height: 67px;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--03, #8E6147);
+    margin-top: 20px;
+    color: var(--02, #F7E5CD);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 24px */
+}
+
+.create_music_button:hover {
+    background: var(--03, #8E6147);
+    color: var(--02, #F7E5CD);
+}
+
+.share_text {
+    color: var(--04, #202227);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 19.2px */
+    margin-bottom: 12px !important;
+}
+
+.text_area {
+    margin-bottom: 20px;
+}
+
+.facebookDiv {
+    border-radius: 4px;
+    background: rgba(61, 90, 152, 0.06);
+    width: 157px;
+    height: 115px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopify {
+    border-radius: 4px;
+    background: rgba(149, 191, 70, 0.06);
+    width: 157px;
+    height: 115px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube {
+    border-radius: 4px;
+    background: rgba(255, 0, 0, 0.06);
+    width: 157px;
+    height: 115px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apple {
+    border-radius: 4px;
+    background: rgba(253, 76, 97, 0.04);
+    width: 157px;
+    height: 115px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline_icons {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 6px;
+    margin-top:12px !important ;
+}
+
+@media screen and(max-width:768) {
+    .timeline_icons {
+        display: flex;
+        flex-wrap: wrap !important;
+
+    }
+}

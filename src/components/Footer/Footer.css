@@ -1,0 +1,31 @@
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: var(--06, #FFF);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: black;
+  padding-top: 24px;
+  padding-bottom: 22px;
+}
+
+.Privacy {
+  margin-left: 20px;
+}
+
+.footer_bg {
+  background-color: black;
+
+}
+
+.fixed {
+  margin-top: 100px;
+  position: static;
+  bottom: 0;
+  width: 100% !important;
+  overflow: hidden;
+}

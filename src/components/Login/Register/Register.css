@@ -1,0 +1,95 @@
+.register_heading {
+  color: var(--neutral-900, #0f0609);
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 24px !important;
+  text-align: center;
+}
+
+.sign_up_with_google_text {
+  color: var(--gray-700, #344054);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.google_btn_design {
+  border-radius: 8px;
+  border: 1px solid var(--gray-300, #d0d5dd);
+  background: var(--base-white, #fff);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  display: flex;
+  min-height: 48px;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.register_container {
+  width: 100%;
+  margin: auto;
+  max-width: 450px;
+}
+
+.label {
+  color: var(--01, #171717);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 21px */
+}
+
+.input_field_design {
+  width: 100% !important;
+  margin-top: 40px !important;
+  color: var(--06, #fff);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.or {
+  color: var(--gray-300, #d0d5dd);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 21px */
+}
+
+.login_input1 {
+  border-radius: 8px;
+  background: var(--06, #fff);
+  padding: 12px 16px;
+}
+
+.login_input2 {
+  border-radius: 8px;
+  background: var(--06, #fff);
+  padding: 12px 16px;
+  /* margin-bottom: 24px !important; */
+}
+
+.have_an_account_text {
+  color: var(--02, #6f6f6f);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+}
