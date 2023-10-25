@@ -12,7 +12,7 @@ const MusicTimeline = () => {
   const scrollableRef = useRef(null);
   const userTokensJSON = localStorage.getItem("userTokens");
   const userTokens = JSON.parse(userTokensJSON);
-  const token = userTokens[0]?.auth?.token;
+  const token = userTokens?.auth?.token;
   const [getTimeline, setGetTimeline] = useState([]);
   const [timelineData, setTimelineData] = useState({
     year: "",
@@ -23,13 +23,6 @@ const MusicTimeline = () => {
     myStory: "",
   });
 
-  function scrollToBottom() {
-    if (scrollableRef.current) {
-      scrollableRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-  function refreshPage() {}
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setTimelineData({
@@ -39,8 +32,11 @@ const MusicTimeline = () => {
     console.log(timelineData);
   };
 
+  console.log(userTokensJSON);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(e);
     try {
       if (!userTokensJSON) {
         console.error("userTokens not found in local storage.");

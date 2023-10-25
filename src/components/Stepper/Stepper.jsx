@@ -3,6 +3,19 @@ import "./Stepper.css";
 // import { useState } from "react";
 // import axios from "axios";
 
+import {
+  FacebookIcon,
+  FacebookShareButton,
+  InstapaperShareButton,
+  LineShareButton,
+  LinkedinIcon,
+  LinkedinShareButton,
+  TwitterIcon,
+  TwitterShareButton,
+  WhatsappIcon,
+  WhatsappShareButton,
+} from "react-share";
+
 import facebook from "../../assets/devicon_facebook.png";
 import youtube from "../../assets/logos_youtube-icon.png";
 import shopify from "../../assets/logos_shopify.png";
@@ -13,6 +26,8 @@ import UpdateTimeLineForm from "../MusicTimeline/UpdateTimeLineForm";
 const Stepper = ({ data, handleDeletBtn, scrollableRef, refetch }) => {
   const [editTimeLine, setEditTimeLine] = useState(null);
   // const [isLoading, setIsLoading] = useState([]);
+
+  const siteUrl = window.location.href;
   console.log(editTimeLine);
   return (
     <div className="stepper">
@@ -60,10 +75,34 @@ const Stepper = ({ data, handleDeletBtn, scrollableRef, refetch }) => {
                     </div>
                   </div>
                   <div className="flex justify-end gap-3 pr-2 cursor-pointer">
-                    <img className="w-5 h-5" src={facebook} alt="" />
-                    <img className="w-5 h-5" src={shopify} alt="" />
-                    <img className="w-5 h-5" src={youtube} alt="" />
-                    <img className="w-5 h-5" src={apple} alt="" />
+                    <FacebookShareButton
+                      url={siteUrl}
+                      hashtag="music"
+                      quote="Best Seller in town"
+                    >
+                      <FacebookIcon size={30} round={true} />
+                    </FacebookShareButton>
+                    <WhatsappShareButton
+                      url={siteUrl}
+                      hashtag="music"
+                      quote="Best Seller in town"
+                    >
+                      <WhatsappIcon size={30} round={true} />
+                    </WhatsappShareButton>
+                    <LinkedinShareButton
+                      url={siteUrl}
+                      hashtag="music"
+                      quote="Best Seller in town"
+                    >
+                      <LinkedinIcon size={30} round={true} />
+                    </LinkedinShareButton>
+                    <TwitterShareButton
+                      url={siteUrl}
+                      hashtag="music"
+                      quote="Best Seller in town"
+                    >
+                      <TwitterIcon size={30} round={true} />
+                    </TwitterShareButton>
                   </div>
                 </div>
               </div>
