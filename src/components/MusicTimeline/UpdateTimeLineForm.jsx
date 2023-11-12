@@ -31,7 +31,7 @@ const UpdateTimeLineForm = ({ timeline, closeForm, refetch }) => {
       });
   };
   return (
-    <div className="!fixed w-full h-full top-0 right-0 left-0 bg-gray-800 bg-opacity-70 !z-50 flex justify-center items-center">
+    <div className="!fixed w-full h-full top-0 right-0 left-0 bg-gray-800 bg-opacity-70 !z-[10000000000] flex justify-center items-center">
       <form
         onSubmit={handleSubmit(handleUpdate)}
         className="max-w-[600px] mx-auto bg-white p-2 rounded"
